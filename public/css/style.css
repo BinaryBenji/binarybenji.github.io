@@ -544,7 +544,7 @@ html {
 
 body {
   overflow: hidden;
-  background: #bcdee7 url("../img/bg.jpg") no-repeat center center fixed;
+  /*background: #bcdee7 url("../img/bg.jpg") no-repeat center center fixed;*/
   background-size: cover;
   position: fixed;
   padding: 0px;
@@ -559,7 +559,7 @@ body:before {
   content: "";
   height: 0px;
   padding: 0px;
-  border: 130em solid #313440;
+  border: 130em solid #24262d;
   position: absolute;
   left: 50%;
   top: 100%;
@@ -592,7 +592,7 @@ p {
 }
 
 .profile-card {
-  background: #FFB300;
+  background: #ff5722;
   width: 56px;
   height: 56px;
   position: absolute;
