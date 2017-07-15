@@ -1,2 +1,0 @@
-# binarybenji.github.io
-Website
