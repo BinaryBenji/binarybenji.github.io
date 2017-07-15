@@ -547,9 +547,9 @@ html {
 
 body {
   overflow: hidden;
-  -moz-transform: scale(1.5, 1.5); /* Moz-browsers */
-    zoom: 1.5; /* Other non-webkit browsers */
-    zoom: 150%; /* Webkit browsers */
+  /*-moz-transform: scale(1.5, 1.5);
+    zoom: 1.5; 
+    zoom: 150%; */
   /*background: #bcdee7 url("../img/bg.jpg") no-repeat center center fixed;*/
   background-size: cover;
   position: fixed;
