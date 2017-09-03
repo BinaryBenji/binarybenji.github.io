@@ -1,114 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="./public/css/style.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+  <meta charset="UTF-8">
+  <title>Expanding Card Grid With Flexbox</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Slabo+27px|Yesteryear'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
+
 <body>
-<aside class="profile-card">
-    <header>
-    <br/>
-      <h1> <i class="columns icon"> </i> Portfolio</h1>
-    </header>
+  <div class="wrapper">
 
-    <div class="profile-bio">
-       <!-- <div class="ui four column relaxed grid">
-  <div class="black column">
-    <center>
-    <h2> Neos </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="https://raw.githubusercontent.com/BinaryBenji/Neos.IT/master/web/public/img/10x10log.png">
-      <h5 style="float: right"> VoIP decentralized server <br/> Node.JS Admin panel </h5>
-  </div>
-  <div class="blue column">
-  <center>
-    <h2> Triton </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px" src="../public/img/triton.png">
-     <h5 style="float: right"> PHP Phishing automator <br/> </h5>
-  </div>
-  <div class="purple column">
-  <center>
-    <h2> Fractol </h2>
-     </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px" src="../public/img/brnc.png">
-   <h5 style="float: right"> Fractal Design <br/> C Programming </h5>
-  </div>
-  <div class="olive column">
-    <center>
-    <h2> Jungle Run </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="../public/img/jgr.png">
-     <h5 style="float: right"> IN'TECH Sport day <br/> Project Management </h5>
-  </div>
-</div>
+  <div class="header">
+  <!--   <h1 class="header__title">Benjamin Zmuda</h1><br> -->
+    <h2 class="header__subtitle"> Portfolio </h2>
+   <!--  <img src="sqimg.png" style="max-width: 75%"/> -->
+    <!-- <img src="./public/img/sqimg.png" class="hoverZoomLink" style="max-width: 75%"> -->
+      <br>
 
-<div class="ui four column relaxed grid">
-  <div class="yellow column">
-  <center>
-    <h2> Kidin'Tech </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="../public/img/kdn.png">
-    <h5 style="float: right"> Coding for kids <br/> Project Management </h5>
+     <!--  <div class="ui vertical labeled icon buttons">
+      <a href="https://fr.linkedin.com/in/benjamin-zmuda-156770134" class="large ui white button"><i class="address card outline icon"></i>Resume / CV </a>
+      <a href="port.html" class="large ui white button"><i class="columns icon"></i>Portfolio</a>
+      <a href="https://github.com/BinaryBenji" class="large ui white button"><i class="github alternate icon"></i>GitHub</a>
+      <a href="https://github.com/BinaryBenji" class="large ui white button"><i class="bitcoin alternate icon"></i>Donate</a>
+      <a href="contact.html" class="large ui white button"><i class="send icon"></i>Contact me</a>
+      </div> -->
+      <!-- <h1>/h1> -->
   </div>
-  <div class="pink column">
-  <center>
-    <h2> Lost </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="../public/img/medium_bzmuda.jpg">
-    <h5 style="float: right"> Android Lost App <br/> Java </h5>
-  </div>
-  <div class="red column">
-  <center>
-    <h2> Wolf3D </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="../public/img/medium_bzmuda.jpg">
-    <h5 style="float: right"> Wolf3D Remake <br/> C Programming </h5>
-  </div>
-  <div class="brown column">
-  <center>
-    <h2> RT </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="../public/img/medium_bzmuda.jpg">
-  <h5 style="float: right"> RayTracer Images <br/> C Programming </h5>
-  </div>
-</div>
 
-<div class="ui four column relaxed grid">
-  <div class="orange column">
-    <center>
-    <h2> Libft </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="https://raw.githubusercontent.com/BinaryBenji/Neos.IT/master/web/public/img/10x10log.png">
-      <h5 style="float: right"> Recode of 63 C functions <br/> </h5>
-  </div>
-  <div class="green column">
-  <center>
-    <h2> Futur projet S5 </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px" src="../public/img/triton.png">
-     <h5 style="float: right"> Futur projet S5 <br/> </h5>
-  </div>
-  <div class="grey column">
-  <center>
-    <h2> Tig'a'Rebond </h2>
-     </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px" src="https://camo.githubusercontent.com/d51f1824d4a82b584234be9c04e256e184d87ac2/68747470733a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031372f32352f372f313439383339333639342d6368616d656c656f6e322e706e67">
-   <h5 style="float: right"> Association <br/></h5>
-  </div>
-  <div class="teal column">
-    <center>
-    <h2> Jungle Run </h2>
-    </center>
-    <img style="max-width: 50%; border-radius: 50%;  width: 150px; height:150px; border: solid 1px"  src="../public/img/jgr.png">
-     <h5 style="float: right"> IN'TECH Sport day <br/> Project Management </h5>
-  </div>
-</div> -->
+  <div class="cards">
+    <div class=" card [ is-collapsed ] ">
+      <div class="card__inner [ js-expander ]">
+        <span>Neos<br><!-- <br>VoIP decentralized solution based on Raspberry Pi --><br></span>
+        <img src="https://raw.githubusercontent.com/BinaryBenji/Neos.IT/master/web/public/img/10x10log.png" alt="" style="width: 150px; height: 150px">
+       <!--  <i class="fa fa-folder-o"></i> -->
+      </div>
+      <div class="card__expander">
+        <i class="fa fa-close [ js-collapser ]"></i>
+        A Mobile pilotable VoIP server based on asterisk
+        <br/><br>
+        <a href="https://github.com/BinaryBenji/Neos.IT" class="large ui white button"><i class="github outline icon"></i>View source</a>
+      </div>
     </div>
-  </aside>  
+    <div class=" card [ is-collapsed ] ">
+      <div class="card__inner [ js-expander ]">
+        <span>Fractol<br><!-- <br>2D Fractal Design : Made with C and Minilibx --><br></span>
+         <img src="img/brnc.png" alt="" style="width: 150px; height: 150px">
+        <!-- <i class="fa fa-folder-o"></i> -->
+      </div>
+      <div class="card__expander">
+        <i class="fa fa-close [ js-collapser ]"></i>
+        Coming soon!
+      </div>
+    </div>
+    <div class=" card [ is-collapsed ] ">
+      <div class="card__inner [ js-expander ]">
+        <span>Tig'a Rebond <br><br></span>
+        <img src="./img/logoffdd.png" alt="" style="width: 150px; height: 150px">
+        <!-- <i class="fa fa-folder-o"></i> -->
+      </div>
+      <div class="card__expander">
+        <i class="fa fa-close [ js-collapser ]"></i>
+        Coming soon!
+      </div>
+    </div>
+     <div class=" card [ is-collapsed ] ">
+      <div class="card__inner [ js-expander ]">
+        <span>Kidin'Tech <br/><br/></span>
+        <img src="./img/kdn.png" alt="" style="width: 150px; height: 150px">
+        <!-- <i class="fa fa-folder-o"></i> -->
+      </div>
+      <div class="card__expander">
+        <i class="fa fa-close [ js-collapser ]"></i>
+        Coming soon!
+      </div>
+    </div>
+     <div class=" card [ is-collapsed ] ">
+      <div class="card__inner [ js-expander ]">
+        <span>Wolf3D <br><br></span>
+        <img src="img/wolf.png" alt="" style="width: 150px; height: 150px">
+        <!-- <i class="fa fa-folder-o"></i> -->
+      </div>
+      <div class="card__expander">
+        <i class="fa fa-close [ js-collapser ]"></i>
+        Coming soon!
+      </div>
+    </div>
+    <div class=" card [ is-collapsed ] ">
+      <div class="card__inner [ js-expander ]">
+        <span>Driffter <br><br></span>
+        <img src="img/drif.png" alt="" style="width: 150px; height: 150px">
+        <!-- <i class="fa fa-folder-o"></i> -->
+      </div>
+      <div class="card__expander">
+        <i class="fa fa-close [ js-collapser ]"></i>
+        Coming soon!
+      </div>
+    </div>
+  </div>
+ <!--  <center>
+
+  </center> -->
+</div>
+
+
+<!-- <center>
+
+</center> -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>
